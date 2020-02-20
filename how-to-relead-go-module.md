@@ -9,7 +9,7 @@
 
 ## pkg.go.dev简介
 ![](https://user-gold-cdn.xitu.io/2020/2/20/17061bd13d8f0c5e?w=1287&h=887&f=png&s=116940)
-[go.dev](https://go.dev) 是go官方团队于2019年11月上线的集合go开发资源的网站，包括一些学习课程和一些go的案例，当然最重要的就提供了go的第三方包的检索功能。没错，他就是用来取代原来的[godoc.org](http://godoc.org)的，现在godoc.org上也有提示提醒用户迁移到pkg.go.dev。在这篇文章中，我们将把go module模块发布到pkg.go.dev。
+[go.dev](https://go.dev) 是go官方团队于2019年11月上线的集合go开发资源的网站，包括一些学习课程和一些go的案例，当然最重要的就是提供了go的第三方包的检索功能。没错，他就是用来取代原来的[godoc.org](http://godoc.org)的，现在godoc.org上也有提示提醒用户迁移到pkg.go.dev。在这篇文章中，我们将把go module模块发布到pkg.go.dev。
 
 
 BTW,在我写这篇文章的时候（2020.02.19），go官方刚好也宣布了go.dev不久将开源。
