@@ -114,7 +114,7 @@ git tag v1.0.0
 （这里有些奇怪，之前的v0.0.0消失了，不知道什么原因）
 
 我们执行`go get -u github.com/YouEclipse/how-to-release-go-module` 即可获取最新发布的版本
-```
+```shezhi
 go get -u github.com/YouEclipse/how-to-release-go-module
 go: finding github.com/YouEclipse/how-to-release-go-module v1.0.0
 go: downloading github.com/YouEclipse/how-to-release-go-module v1.0.0
@@ -187,17 +187,17 @@ go get -u github.com/YouEclipse/how-to-release-go-module
 
 如果我们要使用v2.0.0版本，修改go get的路径为`github.com/YouEclipse/how-to-release-go-module/v2`即可。
 
-至此，我们的breaking changes版本的发布夜完成了。
+至此，我们的breaking changes版本的发布也完成了。
 
 
 ## 添加 go dev badge
-大部分的开源的项目我们都可以在README中看到各种小图标，标识着项目的各种状态，一般称之为badge。在pkg.go.dev之前，大部分的go项目都会添加godoc.org的badge引导开发者们去godoc.org查看文档，但是既然使用了pkg.go.dev,我们自然就应该添加go.dev 的badge。更多的badge可以在[shields.io](https://shields.io/)查看。
+大部分的开源的项目我们都可以在README中看到各种小图标，标识着项目的各种状态，一般称之为badge。在pkg.go.dev之前，大部分的go项目都会添加godoc.org的badge引导开发者们去godoc.org查看文档，但是既然使用了pkg.go.dev,我们自然就应该添加go.dev 的badge。更多的badge和相关设置可以在[shields.io](https://shields.io/)查看。
 
 添加badge的方法和markdow添加图片的方法一样，只要替换项目在pkg.go.dev的路径即可
 ```markdown
 [![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/url/of/your-module)
 ```
-比如``github.com/YouEclipse/how-to-release-go-module/v2` 这个项目就可以设置成
+比如`github.com/YouEclipse/how-to-release-go-module/v2` 这个项目就可以设置成
 ```markdown
 [![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/YouEclipse/how-to-release-go-module?tab=doc) 
 ```
@@ -207,10 +207,6 @@ go get -u github.com/YouEclipse/how-to-release-go-module
 
 这样，我们的go module 模块看起来就很完美了。
 
-
-
-
-
 ## 结语
 本文从一个简单的例子基本覆盖了发布go module 模块到pkg.go.dev可能会遇到的场景，希望能给阅读此文章的开发者提供帮助。
 
@@ -218,5 +214,13 @@ go get -u github.com/YouEclipse/how-to-release-go-module
 
 
 ## 附录
-1 Go夜读- 
-2 Go modules Wiki
+1 [Go modules Wiki](https://github.com/golang/go/wiki/Modules)
+
+2 [Go夜读第 61 期 Go Modules、Go Module Proxy 和 goproxy.cn](https://reading.developerlearning.cn/reading/61-2019-09-26-go-module-goproxy-cn/)
+
+
+3 [go.dev: serve status badge similar to godoc.org](https://github.com/golang/go/issues/36982)
+
+4 [示例项目 how-to-release-go-module](https://github.com/YouEclipse/how-to-release-go-module)
+
+5 [Go module机制下升级major版本号的实践](https://tonybai.com/2019/06/03/the-practice-of-upgrading-major-version-under-go-module/)
